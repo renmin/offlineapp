@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="./source/database.js"></script>
+		<script type="text/javascript" src="./source/template.js"></script>
+		<script type="text/javascript" src="./source/application/applicationcontroller.js"></script>
+		<script type="text/javascript" src="./source/articles/article.js"></script>
+		<script type="text/javascript" src="./source/articles/articlescontroller.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+				APP.applicationController.start(resources);					
+
+			});
+		</script>
+		<title>News</title>
+	</head>
+<body>
+	<div id="loading">Loading&hellip;</div>
+</body>
+</html>
