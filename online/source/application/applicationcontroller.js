@@ -52,8 +52,6 @@ APP.applicationController = (function () {
             // Listen to the hash tag changing
             $(window).bind("hashchange", route);
 
-            // Inject CSS Into the DOM
-            $("head").append("<style>" + resources.css + "</style>");
 
             // Create app elements
             $("body").html(APP.templates.application());
@@ -64,9 +62,6 @@ APP.applicationController = (function () {
             route();
         });
 
-        if (storeResources) {
-            localStorage.resources = JSON.stringify(resources);
-        }
     }
 
     return {
