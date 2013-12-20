@@ -1,7 +1,7 @@
 <?php
 // Convert RSS feed to JSON, stripping out all but basic HTML
-//$rss = new SimpleXMLElement(file_get_contents('http://feeds2.feedburner.com/ft/tech-blog'));
-$rss = new SimpleXMLElement(file_get_contents('./rss.xml'));
+$rss = new SimpleXMLElement(file_get_contents('http://cn.engadget.com/rss.xml'));
+//$rss = new SimpleXMLElement(file_get_contents('./rss.xml'));
 $xpath = '/rss/channel/item';
 $items = $rss->xpath($xpath);
 
